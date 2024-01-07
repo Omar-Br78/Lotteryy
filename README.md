@@ -2,9 +2,27 @@
 
 This Python script analyzes historical stock data stored in a CSV file (`orcl.csv`). It calculates and writes two technical indicators, the 5-day Simple Moving Averages (SMA) and the 14-day Relative Strength Index (RSI), to separate CSV files (`orcl-sma.csv` and `orcl-rsi.csv`).
 
+## Installation
+
+You can install the `lottery_DCL` package using `pip`. Open your terminal or command prompt and run the following command:
+
+```bash
+pip install lottery-DCL==0.1.1
+
+```
+
 ## Usage
 
-1. **Load Historical Data:**
+1. **Import the Package**:
+
+In your Python script or interactive session, import the lottery_DCL package
+
+    ```python
+    import lottery_DCL
+    ```
+    
+
+2. **Load Historical Data:**
    - The script first loads historical stock data from a CSV file (`orcl.csv` in this example). The data is expected to have columns like 'Date', 'Open', 'High', 'Low', 'Close', 'Volume', etc. Make sure to adjust the `csv_file_path` variable with the correct path to your CSV file.
 
     ```python
@@ -12,7 +30,7 @@ This Python script analyzes historical stock data stored in a CSV file (`orcl.cs
     historical_data = load_historical_data(csv_file_path)
     ```
 
-2. **Run the Script:**
+3. **Run the Script:**
    - Execute the script to load the historical data, calculate technical indicators, and write the results to CSV files. Run the following command in the command line:
 
     ```bash
@@ -38,15 +56,16 @@ Two CSV files (`orcl-sma.csv` and `orcl-rsi.csv`) will be generated with the cal
   - Writes data to a CSV file with the specified header.
 
 ## The Stracture of The File:
+The Structure of The File:
+
 my-python-project
 │───README.md
-│─── setup.py
-│   
+│───setup.py
 │
-└───Lotterry
-    | __init__.py
-    │   Lottery.py
-
+│
+└───Lottery
+│ init.py
+│ lottery_dcl_.py
 
 
 
