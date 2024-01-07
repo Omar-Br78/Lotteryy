@@ -20,7 +20,7 @@ In your Python script or interactive session, import the lottery_DCL package
     ```python
     import lottery_DCL
     ```
-    
+
 
 2. **Load Historical Data:**
    - The script first loads historical stock data from a CSV file (`orcl.csv` in this example). The data is expected to have columns like 'Date', 'Open', 'High', 'Low', 'Close', 'Volume', etc. Make sure to adjust the `csv_file_path` variable with the correct path to your CSV file.
@@ -34,7 +34,7 @@ In your Python script or interactive session, import the lottery_DCL package
    - Execute the script to load the historical data, calculate technical indicators, and write the results to CSV files. Run the following command in the command line:
 
     ```bash
-    python lottery_dcl_.py
+    python lottery_DCL.py
     ```
 
 ## Output Files
